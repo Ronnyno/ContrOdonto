@@ -1,0 +1,27 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <header class="header">
+        <p class="titulo">ContrOdonto</p>
+    </header>
+    <input type="checkbox" id="check"></input>
+    <label id="icone" for="check"><h:graphicImage library="imagens" name="menu2.png"></h:graphicImage></label>
+    <div class="barra">
+        <nav id="menu">
+            <ul>
+                <li><a href="cadastroProduto.xhtml"><div class="link">CADASTRO</div></a></li>
+                <li><a><div class="link">CONSULTA</div></a>
+                    <ul>
+                        <li><a href="consultarProduto.xhtml"><div class="link">PRODUTO</div></a></li>
+                        <li><a href="consultarEstoque.xhtml"><div class="link">ESTOQUE</div></a></li>
+                        <li><a href="consultarMovimento.xhtml"><div class="link">MOVIMENTAÇÃO</div></a></li>
+                    </ul>
+                </li>
+                <li><a href="emprestimo.xhtml"><div class="link">EMPRÉSTIMO</div></a></li>
+                <li><a href="consultarEmprestimo.xhtml"><div class="link">DEVOLUÇÃO</div></a></li>
+                <li><a href="tutorialdeAjuda.xhtml"><div class="link">AJUDA</div></a></li>
+                <li><a href="login.xhtml"><div class="link">SAIR</div></a></li>
+            </ul>
+        </nav>
+    </div>
+</ui:composition>
+

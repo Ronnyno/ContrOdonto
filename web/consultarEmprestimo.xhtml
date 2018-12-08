@@ -1,0 +1,32 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="layout_2.xhtml">         
+    <ui:define name="titulo">
+        <p:fieldset styleClass="tituloPage" legend="LISTA DE EMPRESTIMOS"></p:fieldset>
+    </ui:define>
+    <ui:define name="content">
+        <h:form styleClass="cad-form">
+            <h:outputLabel for="emprestimo" value="EMPRÉSTIMOS" style="color: cadetblue" styleClass="label"></h:outputLabel>
+            <p:dataTable>
+                <p:column headerText="Data">
+                    <h:outputText></h:outputText>
+                </p:column>
+                <p:column headerText="Hora">
+                    <h:outputText></h:outputText>
+                </p:column>
+                <p:column headerText="Produto">
+                    <h:outputText></h:outputText>
+                </p:column>
+                <p:column headerText="Selecionar">
+                    <p:commandButton  icon="ui-icon-circle-check"></p:commandButton>
+                </p:column>
+            </p:dataTable>
+            <p:commandButton action="registrarDevolucao" icon="ui-icon-circle-check"></p:commandButton>
+            <p:fieldset class="bt-salvar">
+                <p:commandButton action="principal" value="Fechar" update="@form"></p:commandButton>
+            </p:fieldset>
+        </h:form>
+    </ui:define>
+</ui:composition>

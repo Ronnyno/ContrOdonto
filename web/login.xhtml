@@ -1,0 +1,29 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="layout_1.xhtml">
+    <ui:define name="content">
+        <div class="corpo">
+            <div class="login">
+                <h:form style="background: #999999; height: 300px">
+                    <div style="background-color: cadetblue; height: 30px;"><p style="padding: 7px;">LOGIN</p></div>      
+                    <div >
+                        <h:outputLabel/>
+                        <div class="p">Acesso</div>
+                        <h:inputText class="text" rendered="true"/>
+                    </div>
+                    <div>
+                        <h:outputLabel/>
+                        <div class="p">Senha</div>
+                        <h:inputSecret class="text" rendered="true"/>
+                    </div>
+                    <div class="bt-entrar">
+                        <p:commandButton class="bt" action="principal.xhtml" value="ENTRAR" ></p:commandButton>
+                    </div>
+                    <p style="font-size: 12px; padding-top: 25px">Esqueceu Acesso/Senha? <h:link style="color: blue">Clique Aqui</h:link> </p>
+                </h:form>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>
+
